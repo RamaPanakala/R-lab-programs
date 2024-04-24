@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+h2 {
+  margin: 0;
+  font-family: 'Quicksand';
+  color:#eee310f6;
+  font-weight: bold; 
+}
+
+body {
+  background-image: url('https://images.saymedia-content.com/.image/t_share/MTkyOTkyMzE2OTQ3MDQ3NjQ1/website-background-templates.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  padding: 20px;
+  align-items: center;
+  max-width: 600px;
+  display: flex;
+}
+
+.navbar h1{
+ color: #620c21;
+ background-color: #108aa2bb;
+ border-radius: '5px';
+}
+
+.navbar .links {
+  margin-left: auto;
+}
+
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar a:hover {
+  color:#47280e;
+}
+
+.content {
+  max-width: 16px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.World p {
+  color:#d2e06b;
+}
+
+.Home {
+  text-align: center;
+  margin: 20px;
+}
+
+.World {
+  border: 1px solid #f63434;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.World h2 {
+  color: #356885;
+}
+
+.World .blog-item {
+  margin-bottom: 10px;
+}
+
+.World .blog-item button {
+  margin-left: 10px;
+}
+
+.web-development {
+  color: rgb(131, 92, 9);
+}
+
+.delete-button {
+  background-color: #ff0000;
+  color: #db1a1a;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+}
+
+:root {
+  --primary-color: #6a61f3;
+  --secondary-color: #a8c8ea;
+}
+
+.Home {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.Home form {
+  width: 100%;
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.Home label {
+  font-weight: bold;
+}
+
+.Home input[type="text"],
+.Home textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #d21161;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.Home input[type="text"]:focus,
+.Home textarea:focus {
+  border-color: var(--primary-color);
+}
+
+.Home button {
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: rgb(76, 6, 6);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Home button:hover {
+  background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 600px) {
+  .Home form {
+    max-width: 90%;
+  }
+}
+
+.form-container {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+.form-label {
+  color: rgb(0, 139, 16);
+  font-size: 20px;
+}
+
+.form-input {
+  margin-bottom: 10px;
+  background-color: #4a0b0b;
+  border: 1px solid #ccc;
+
+  padding: 8px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-button {
+  background-color: rgb(0, 255, 102);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+html, body {
+  width: 100%;
+  padding: 0;
+}
+
+.logo {
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 100px;
+  height: auto;
+}
+
+h1 {
+  animation-name: moveText;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: #ebe8b9d4;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+}
+
+@keyframes moveText {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
+/* Custom CSS for Footer */
+.footer .footer__icon .bx {
+  color: #d9d6ffca; /* Change this color to your desired color */
+}
+.Home {
+  font-size: 25px;
+  color: #45d8ef; /* Change this color to your desired text color */
+}
+.Home form {
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto;
+}
+
+.form-group {
+  background-color: #f2f2f2; /* Set background color */
+  padding: 20px; /* Adjust padding as needed */
+  border-radius: 5px;
+}
+
+.Home label {
+  display: circle;
+  margin-bottom: 5px;
+}
+
+.Home input[type="text"],
+.Home textarea {
+  width: calc(100% - 20px); /* Adjust width to account for padding */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #b4b0eb;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+  
+
+.Home textarea {
+  height: 50px; /* Set the height of the textarea */
+background-color: #b4b0eb;
+}
+
+.Home button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Change the background color */
+  color: #ffffff; /* Change the text color */
+  cursor: pointer;
+}
+
+.Home button[type="submit"] {
+  background-color: #28a745; /* Different color for submit button */
+}
+.Home {
+  font-size: 25px;
+}
+
+.Home form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding a shadow effect */
+}
+
+.HomeContainer {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333; /* Text color */
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #b4b0eb;
+  box-sizing: border-box;
+  color: #333; /* Text color */
+}
+
+.form-group textarea {
+  height: 50px;
+}
+
+.form-group button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adding smooth transition */
+}
+
+.form-group button[type="submit"] {
+  background-color: #28a745;
+}
+
+.form-group button:hover {
+  background-color: #0056b3; /* Changing background color on hover */
+}
+.world {
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the gap between rows */
+}
+
+.table-row {
+  display: flex;
+  border: 1px solid #ccc; /* Add borders to the rows */
+  padding: 10px;
+  background-color: #d08dbc;
+}
+
+.table-column {
+  flex: 1;
+  padding: 5px;
+}
+
+.table-column:last-child {
+  flex: 0.5; /* Adjust the width of the last column */
+  display: flex;
+  align-items: center;
+}
+.world {
+  font-family: Arial, sans-serif;
+}
+
+.world h2 {
+  color: #83d3c2;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+
+.table-row:hover {
+  background-color: #838da8de;
+}
+
+.table-column {
+  padding: 12px;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #45a049;
+}
+
+.button-container button:last-child {
+  margin-right: 0;
+}
+
+/* Adjustments for the columns */
+.table-column .table-row {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px; /* Adjust spacing between columns if needed */
+}
+/* Add these styles to your CSS file */
+
+.footer {
+   /* Background color of the footer */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  color: #e1750a; /* Text color of the footer title */
+}
+
+.footer__social {
+  margin-bottom: 20px;
+}
+
+.footer__icon {
+  color: #ab8888; /* Color of the social media icons */
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease; /* Smooth transition effect for icon color change */
+}
+
+.footer__icon:hover {
+  color: #007bff; /* Color of the social media icons on hover */
+}
+
+.footer__copy {
+  font-size: px;
+  color: #8df0f7; /* Color of the copyright text */
+}
+/* Add these styles to your CSS file */
+
+.button-container button {
+  background-color: #4caf50; /* Default background color of the buttons */
+  color: white; /* Default text color of the buttons */
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition effect for background color change */
+}
+
+.button-container button:hover {
+  background-color: #45a049; /* Background color of the buttons on hover */
+}
+
