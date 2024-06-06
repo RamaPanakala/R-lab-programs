@@ -340,5 +340,71 @@ Rscript /tmp/RIyHsYXYe2.r
 
 
 16 th program 
+  #z
+x <- c(10, 12, 14, 16, 18, 20)  
+mu <- 15 
+
+z_test <- (mean(x) - mu) / (sd(x) / sqrt(length(x)))
+p_value <- 2 * pnorm(-abs(z_test))
+cat("Z-test statistic:", z_test, "\n")
+cat("p-value:", p_value, "\n")
+
+#t
+x <- c(10, 12, 14, 16, 18, 20) 
+mu <- 15
+t_test <- t.test(x, mu = mu)
+
+print(t_test)
+
+#chitest
+
+observed <- matrix(c(10, 20, 30, 15), nrow = 2) 
+expected <- margin.table(observed, margin = 1) %*% t(margin.table(observed, margin = 2)) / sum(observed)
 
 
+chi_square_test <- chisq.test(observed)
+
+
+print(chi_square_test)
+
+#ftest
+group1 <- c(10, 12, 14, 16, 18)
+group2 <- c(20, 22, 24, 26, 28)
+f_test <- var.test(group1, group2)
+print(f_test)
+
+  
+14 th program 
+
+
+  # Example data
+group1 <- c(23, 25, 28, 30, 32)
+group2 <- c(20, 22, 24, 26, 28)
+group3 <- c(18, 21, 24, 27, 30)
+
+# Combine data into a single data frame
+data <- data.frame(
+  value = c(group1, group2, group3),
+  group = factor(rep(c("Group 1", "Group 2", "Group 3"), each = 5))
+)
+
+# Perform ANOVA
+anova_result <- aov(value ~ group, data = data)
+summary(anova_result)
+
+
+  7 th program
+for (i in 1:5) {
+  print(i)
+}
+x <- 1
+while (x <= 5) {
+  print(x)
+  x <- x + 1
+}
+for (i in 1:10) {
+  for (j in 1:10) {
+    cat(i * j, "\t")
+  }
+  cat("\n")
+}
